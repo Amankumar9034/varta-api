@@ -11,6 +11,7 @@ export class MailService {
       host: this.config.get('MAIL_HOST'),
       port: Number(this.config.get('MAIL_PORT')),
       secure: false,
+      family: 4,
       auth: {
         user: this.config.get('MAIL_USER'),
         pass: this.config.get('MAIL_PASS'),
