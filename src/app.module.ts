@@ -9,6 +9,7 @@ import { APP_GUARD } from '@nestjs/core';
 import { JwtAuthGuard } from './modules/auth/jwt-auth.guard';
 import { FollowModule } from './modules/follow/follow.module';
 import { ChatModule } from './modules/chat/chat.module';
+import { PaymentModule } from './modules/payment/payment.module';
 
 
 @Module({
@@ -27,6 +28,7 @@ import { ChatModule } from './modules/chat/chat.module';
     UserModule,
     FollowModule,
     ChatModule,
+    PaymentModule,
   ],
   controllers: [AppController],
   providers: [AppService, 
